@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: rgb(247, 215, 175);}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os dentes</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes de novo</li>
+        <li>Se arrumar para a faculdade</li>
+    </ol>
+<p>Dessa forma ai em cima vc pode adicionar qlquer coisa entre os LI que ele vai enumerar certo, o /li se tornou opcional no html5. Escolha o type para alterar o tipo de lista, como abaixo:</p>
+<ol type="I"> <!--1, A, a, I, i-->
+    <li>Acordar</li>
+    <li>Escovar os dentes</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes de novo</li>
+</ol>
+<p>Se vc quiser q comece em algum número vc coloca ao lado start=''número''>.</p>
+<ol type="1"Start=3> <!--1, A, a, I, i-->
+    <li>Acordar</li>
+    <li>Escovar os dentes</li>
+    <li>Tomar café</li>
+    <li>Escovar os dentes de novo</li>
+</ol>
+<h2>Listas Não Ordenadas</h2>
+<ul>
+    <li>Pão</li>
+    <li>Molho de tomate</li>
+    <li>Salsicha</li>
+    <li>Pimentão</li>
+</ul>
+<p>Posso tbm colocar outros types</p>
+<ul type="square"> <!--square, disc, circle-->
+    <li>Pão</li>
+    <li>Molho de tomate</li>
+    <li>Salsicha</li>
+    <li>Pimentão</li>
+</ul>
+<h2>Juntando listas versão 1.0</h2>
+<ol>
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Isso se chama aninhamento, uma coisa dentro da outra.</li>
+        <li>Ai dessa forma fica dentro</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a">
+        <li>Aqui o mesmo exemplo</li>
+        <li>De listas dentro da outra</li>
+    </ol>
+</ol>
+<p> Se eu quiser q essa lista continue abcd ao invés de abab eu preciso dizer Start + o número da letra do alfabeto q eu quero q continue.</p>
+<h2>Meus jogos favoritos</h2>
+<ol>
+    <li>D&D</li>
+    <ul type=square>
+        <li>RR</li>
+        <ul type=circle>
+            <li>Aqui é um exemplo,</li>
+            <li>De mais um nível de lista dentro da outra.</li>
+        </ul>
+        <li>The Arcanum</li>
+    </ul>
+    <li>LoF</li>
+    <ul type=square>
+        <li>TUG</li>
+        <li>FS</li>
+    </ul>
+    <li>Crônicas</li>
+</ol>
+<p>Eu posso segurar o alt e ir selecionando tudo q eu quero editar ao mesmo tempo.</p>
+<h2>Lista de Definições</h2>
+<dl>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+    <dt>D&D</dt>
+    <dd>Dungeons and Dragons</dd>
+</dl>
+</body>
+</html>

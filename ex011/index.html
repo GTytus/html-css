@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Perceba como a imagem se altera conforme vc muda o tamanho da tela mostrada, criei dentro da picture uma tag source e dentro do srcset eu coloco a imagem q eu quero. Não esquecer de por o tipo da imagem após o type="image/aqui"</p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagem31.png" type="image/png">
+         <img src="imagem65.png" alt="imagem flexível">
+        </picture>
+        <p>Dá pra criar várias sources para diferentes tamanhos!</p>
+        <p>
+            <mark>
+                Uma coisa muito importante é q as sources das imagens devem estar na ordem, n sei pq, mas tem q estar.
+                de baixo pra cima: grande-média-pequena.
+            </mark>
+        </p>
+        <h1>Reproduzindo Áudio</h1>
+        <audio src="D:\OneDrive\Music\Eletrytus\Parasail - Silent Partner.mp3" controls autoplay></audio>
+        <p>Tem q por o controls autoplay</p>
+    <!--Compatível com formato mp3, wav, ogg-->
+    <p>Aqui embaixo eu vou fazer o msm mas especificando o tipo de arquivo etc qse precise</p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="D:\OneDrive\Music\Eletrytus\Parasail - Silent Partner.mp3" type="audio/mpeg">
+    </audio>
+    <p>Se atentar pq cada tipo de arquivo tem um type lá. OBS: mp3 é o único diferente.</p>
+</body>
+</html>
